@@ -1,4 +1,30 @@
-th, td {
+
+thead{
+background-color: limegreen;
+color: white;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
     border: 1px solid;
-    color: lime;
+    border-collapse: collapse;
+}
+ th, tr, td{
+    border: 2px solid;
+    border-color: green;
+    border-collapse: collapse;
+
   }
+
+  .noveny{
+    text-align: center  ;
+    color: green;
+  }
+
+  .mid{
+    display:block ; text-align: center;
+  }
+  
+
+ 

@@ -7,25 +7,28 @@
     <title>Táblázat</title>
 </head>
 <body>
+    <h1 class="noveny">Növények Listája</h1>
+    
     <table class="table table-bordered mt-3">
         <thead>
             <tr>
-                <th>Név</th>
-                <th>Típus</th>
-                <th>Jellemző</th>
+                <th colspan="3">Név</th>
+                <th colspan="3">Típus</th>
+                <th colspan="3">Jellemző</th>
             </tr>
         </thead>
         <tbody>
             {% for plant in plants %}
             <tr>
-                <td>{{ plant.name }}</td>
-                <td>{{ plant.type }}</td>
-                <td>{{ plant.feature }}</td>
+                <td colspan="3">{{ plant.name }}</td>
+                <td colspan="3">{{ plant.type }}</td>
+                <td colspan="3">{{ plant.feature }}</td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
- <a href="/">Vissza a főoldalra</a>
+    <br>
+ <a class="mid" href="/">Vissza a főoldalra</a>
 </body>
 </html>
 
